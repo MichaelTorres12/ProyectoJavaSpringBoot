@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Formulario de Trips</h2>
+	<form th:action="@{/categorias/save}" method="post">
+		<label>Categorias de trips</label>
+		<input type="text" name="nombre">
+		<label>Description</label>
+		<input type="text" name="descripcion"><br>
+		<input type="submit" name="Guardar">
+	</form>
+</body>
+</html>
